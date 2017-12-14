@@ -19,7 +19,8 @@ $savedgraphsnamelist = array();
 foreach ($savedgraphs['user'] as $savedgraph) {
     $savedgraphsnamelist[] = array($savedgraph->id, $savedgraph->name);
 }
-if ($group !== false) {
+
+if ($group) {
     foreach ($savedgraphs['groups'] as $group_graphs) {
         foreach ($group_graphs as $savedgraph) {
             $savedgraphsnamelist[] = array($savedgraph->id, $savedgraph->name);
