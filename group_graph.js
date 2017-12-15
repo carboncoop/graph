@@ -626,6 +626,9 @@ function graph_init_editor()
             $('#graph-save').show();
             $('#graph-delete').show();
         }
+        // Clear the graph
+        feedlist=[];
+        graph_draw();
     });
     $('body').on('click', '.user-name', function () {
         var user = $(this).attr('user');
